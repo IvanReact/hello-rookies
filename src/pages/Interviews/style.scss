@@ -1,0 +1,105 @@
+@import "../../baseline";
+@import "../../variables";
+
+
+.interviews{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    .interviewsMain{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width:375px){
+            flex-direction: column;
+        }
+    }
+    .interviewsWrapper{
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        align-items: center;      
+    }
+    .searchInterviews{
+        display: flex;
+            width: 100%;
+            justify-content: flex-end;
+            margin-bottom: 5vh;
+
+        input{
+            position: relative;
+                right: 11vw;
+                padding-right: 2vw;
+                padding-left: 2vw;
+                width: 30vw;
+                height: 5vh;
+                margin: 20px;
+                border-radius: 5px;
+                border: 1px solid $color1;
+                outline: none;  
+        }
+        img{
+            position: absolute;
+                right: 13vw;
+                margin-top: 3.5vh;
+                width: 25px;
+                height: 25px;
+        }
+        input:focus{
+            background: none;
+            background-color: white;
+            border-radius: 5px;
+            border: 1px solid $color4;
+            outline: none; 
+        }
+   
+    @media screen and (max-width: 835px) {           
+        align-items: center;
+        justify-content: center;
+        margin-left: 10vw;
+        input{
+            margin-left: 15vw;
+            width: 50vw;
+            font-size: 12px;
+        }
+        img{
+            right: 25vw;
+            top: 13vh;
+        }
+        
+}
+
+@media screen and (max-width: 500px) {
+    img{
+        top: 13vh;
+        right: 22vw;
+        width: 25px;
+        height: 25px;
+    }
+    input{
+        font-size: 12px;
+        width: 60vw;
+        
+    }
+}
+@media screen and (max-width: 375px) {
+    img{
+        display: none;
+    }
+    input{
+        font-size: 10px;
+        width: 60vw;
+
+    }
+}
+
+@media screen and (max-width: 320px) {
+    img{
+        width: 0px;
+    }
+}
+
+}
+}

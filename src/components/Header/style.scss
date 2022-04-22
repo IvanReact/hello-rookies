@@ -1,0 +1,78 @@
+@import "../../baseline";
+@import "../../variables";
+.header {
+    background-color: $color1;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: center;
+    height: 13vh;
+    width: 100%;
+    color: white;
+    .headerButton {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+        .active {
+            background-color: $color4;
+            color: white;
+        }
+    }
+    button {
+        width: 15vw;
+        min-height: 5vh;
+        background-color: white;
+        border-top: none;
+        border-bottom: none;
+        border-radius: 5px;
+        color: $color1;
+    }
+    button:hover {
+        cursor: pointer;
+        background-color: $color4;
+        color: white;
+    }
+    img {
+        width: 60px;
+        margin-left: 8vw;
+    }
+    ;
+    .logout {
+        margin-left: 2vw;
+        margin-right: 5vw;
+        width: 5vw;
+        min-height: 5vh;
+        background-color: $color6;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+    .logout:hover {
+        background-color: $color7;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        width: 5.5vw;
+        min-height: 5.5vh;
+        margin-left: 1.5vw;
+    }
+    @media screen and (max-width: 768px) {
+        .logout {
+            font-size: 8px;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .headerButton {
+            width: 80vw;
+            justify-content: center;
+        }
+        .logout {
+            margin-left: 8vw;
+            min-width: 10vw;
+        }
+        button {
+            width: 22vw;
+            font-size: 10px;
+        }
+    }
+}

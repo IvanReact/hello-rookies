@@ -1,0 +1,124 @@
+@import "../../baseline";
+@import "../../variables";
+
+.loginWrapper{
+    font-family: "Calibri";
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    .loginLightDiv{
+        color: $color1;
+        z-index: 1;
+        position: relative;
+        right: 45vw;
+        background-color: white;
+        width: 25vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 40px;
+        justify-content: space-around;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.15) 7.4px 9.4px 3.2px;
+
+        input{
+            width: 15vw;
+            height: 4vh;
+            padding-left: 20px;
+            border: none;
+        }
+        input:focus {
+            outline: none;
+            border-top: 1px solid $color4;
+            border-left: 1px solid $color4;
+          }
+        
+
+            button{
+                width: 7vw;
+                height: 4vh;
+                border-radius: 5px;
+                background-color: $color4;
+                color: white;
+                margin-left: 9.5vw;
+                border-style: none;
+            }
+            button:hover{
+                cursor: pointer;
+                border: 1px solid $color4;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+        .signInDiv{
+            display: flex;
+            border-bottom: 1px solid $color1;
+            img{
+                margin-top: 11.5px;
+                width: 25px;
+                height: 25px;
+            }
+        }
+        @media screen and (max-width: 950px){
+            position: relative;
+            right: 55vw;
+            width: 32vw;
+            padding-right: 10vw;
+            input{
+                width: 20vw;
+            }
+            button{
+                margin-left: 15.5vw;
+            }
+        }
+        @media screen and (max-width: 700px) {
+            margin-left: 120vw;
+            width: 500px;
+        } 
+    }
+    .loginDarkDiv{
+        border-radius: 5px;
+        background-color: $color1 ;
+        color: white;
+        width: 50vw;
+        height: 40vh;
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+        span{
+            color: $color4;
+        }
+        p{
+            margin-top: 8vh;
+            margin-right: 3vw;
+            font-size: 35px;
+            max-width: 16vw;
+            text-align: left;
+        }
+        @media screen and (max-width: 1280px) {
+            p{
+                font-size: 25px;
+                margin-top: 12vh;
+            }
+        }
+        @media screen and (max-width: 950px){
+            width: 80vw;
+            margin-left: 10vw;
+            p{
+                margin-top: 10vh;
+               margin-right: 12vw; 
+                width: 10vw;
+                font-size: 22px;
+            }
+        }
+        @media screen and (max-width: 700px) {
+            display: none;
+        }     
+    }
+
+}
+
+

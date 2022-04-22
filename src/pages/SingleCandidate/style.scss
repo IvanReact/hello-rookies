@@ -1,0 +1,277 @@
+@import "../../baseline";
+@import "../../variables";
+.singleCandidate {
+    h1 {
+        margin-top: 3vh;
+        text-align: center;
+        color: $color1;
+    }
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    .singleCandidateContainer {
+        display: flex;
+        flex-grow: 1;
+        .data {
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            margin-top: 5vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-left: 15vw;
+            margin-right: 15vw;
+            padding: 1vh 3vw;
+            width: 100vw;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            .dataDetails {
+                width: 20vw;
+                color: $color1;
+                height: 20rem;
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                span {
+                    color: $color4;
+                }
+                .fontSize {
+                    font-size: 22px;
+                }
+            }
+            img {
+                min-width: 15vw;
+                border-radius: 15px;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            }
+            @media screen and (max-width: 1040px) {
+                height: 25vh;
+                margin-top: 12vh;
+                h2 {
+                    font-size: 18px;
+                    margin-bottom: 2vh;
+                }
+                .dataDetails {
+                    justify-content: space-around;
+                    padding-top: 5vh;
+                    padding-bottom: 3vh;
+                    .fontSize {
+                        font-size: 15px;
+                    }
+                }
+            }
+            @media screen and (max-width: 880px) {
+                width: 70vw;
+                min-height: 45vh;
+                margin-top: 5vh;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                padding: 10px;
+                .dataDetails {
+                    padding: 0;
+                    margin: 10px;
+                    max-height: 15vh;
+                    justify-content: flex-start;
+                    h2 {
+                        font-size: 22px;
+                    }
+                    .fontSize {
+                        font-size: 22px;
+                    }
+                }
+                #detailsName {
+                    margin-left: 10vw;
+                    h2 {
+                        margin-bottom: 6vh;
+                    }
+                    min-width: 35%;
+                }
+                #detailsEducation {
+                    width: 100%;
+                }
+            }
+            @media screen and (max-width: 650px) {
+                margin-left: 20vw;
+                width: 55vw;
+                min-height: 65vh;
+                margin-top: 5vh;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding: 10px;
+                .dataDetails {
+                    padding: 0;
+                    margin: 10px;
+                    max-height: 15vh;
+                    justify-content: flex-start;
+                    h2 {
+                        font-size: 20px;
+                    }
+                    .fontSize {
+                        font-size: 20px;
+                    }
+                }
+                #detailsName {
+                    margin: 0;
+                    display: flex;
+                    justify-content: center;
+                    margin-left: 0;
+                    width: 100%;
+                    text-align: center;
+                    h2 {
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+                #detailsEducation {
+                    margin: 0;
+                    display: flex;
+                    justify-content: center;
+                    margin-left: 0;
+                    width: 100%;
+                    text-align: center;
+                    h2 {
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+            }
+            @media screen and(max-width: 540px) {
+                height: 20vw;
+                .dataDetails {
+                    h2 {
+                        font-size: 15px;
+                    }
+                    .fontSize {
+                        font-size: 11px;
+                    }
+                    span {
+                        font-size: 20px;
+                    }
+                }
+            }
+            @media screen and(max-width: 350px) {
+                min-height: 50vh;
+            }
+        }
+    }
+    table {
+        color: $color1;
+        border-radius: 15px;
+        border: 3px solid white;
+        margin: 1%;
+        width: 69vw;
+        margin-left: 15vw;
+        margin-right: 15vw;
+        background-color: rgba(255, 255, 255, 0.6);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+        .declined {
+            color: $color6;
+        }
+        .passed {
+            color: green;
+        }
+        .onHover:hover {
+            background-color: white;
+            color: $color1;
+        }
+        img {
+            width: 30px;
+            height: 30px;
+            background-color: white;
+        }
+        button.view {
+            background-color: transparent;
+            background-image: url('../../images/view-icon.png');
+            background-size: 30px;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+        }
+        button.view:hover {
+            background: url('../../images/search.png') no-repeat;
+            cursor: pointer;
+            background-size: 30px;
+        }
+        button.edit {
+            background-color: transparent;
+            background-image: url('../../images/edit-icon2.png');
+            background-size: 30px;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+        }
+        button.edit:hover {
+            background: url('../../images/edit-icon.png') no-repeat;
+            cursor: pointer;
+            background-size: 30px;
+        }
+        button.garbage {
+            background-color: transparent;
+            background-image: url('../../images/garbageClosed.png');
+            background-size: 30px;
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+        }
+        button.garbage:hover {
+            background: url('../../images/garbage-open.png') no-repeat;
+            cursor: pointer;
+            background-size: 30px;
+        }
+        button {
+            border: none;
+        }
+        td {
+            border-right: 3px solid white;
+            text-align: center;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            border-bottom: 3px solid white;
+        }
+        th {
+            text-align: center;
+            border-right: 3px solid white;
+            background-color: $color4;
+            color: $color1;
+            height: 4vh;
+        }
+        @media screen and(max-width: 540px) {
+            .delCol {
+                display: none;
+            }
+        }
+        @media screen and(max-width: 350px) {
+            margin: 0;
+            margin-left: 6vw;
+        }
+        #firstTH {
+            border-radius: 15px 0px 0px 0px;
+        }
+        #lastTH {
+            border-radius: 0px 15px 0px 0px;
+        }
+        tr {
+            border-right: 1px solid white;
+            text-align: center;
+        }
+    }
+    .newInterviewBTN {
+        width: 16vw;
+        height: 5vh;
+        border-radius: 10px;
+        border: none;
+        background-color: $color4;
+        color: $color1;
+        margin-left: 68vw;
+        @media screen and(max-width: 540px) {
+            font-size: 8px;
+            color: white;
+        }
+    }
+    .newInterviewBTN:hover {
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+}

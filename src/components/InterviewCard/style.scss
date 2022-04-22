@@ -1,0 +1,104 @@
+@import "../../baseline";
+@import "../../variables";
+.interviewCard {
+    min-width: 75vw;
+    border: 1px solid $color1;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+    color: $color1;
+    button.garbage {
+        background-color: transparent;
+        background-image: url('../../images/garbageClosed.png');
+        background-size: 30px;
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        border: none;
+    }
+    button.garbage:hover {
+        background: url('../../images/garbage-open.png') no-repeat;
+        cursor: pointer;
+        background-size: 30px;
+        border: none;
+    }
+    h2 {
+        border-right: 1px solid black;
+        height: 100%;
+        margin-right: 5px;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+    .greenStatus {
+        color: green;
+    }
+    .redStatus {
+        color: $color6;
+    }
+    span {
+        color: $color4;
+        font-size: 14px;
+    }
+    .names {
+        width: 20vw;
+    }
+    .dates {
+        min-width: 15vw;
+    }
+    .phase {
+        width: 10vw;
+    }
+    .status {
+        width: 10vw;
+        // font-size: 15px;
+    }
+    @media screen and (max-width: 835px) {
+        h2 {
+            font-size: 15px;
+        }
+        span {
+            font-size: 13px;
+        }
+    }
+    @media screen and (max-width:768px) {
+        display: flex;
+        flex-direction: column;
+        min-width: 25vw;
+        max-width: 25vw;
+        justify-content: center;
+        align-items: center;
+        h2 {
+            border-right: none;
+            border-bottom: 1px solid $color1;
+            min-width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h2.dates {
+            min-width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        min-width: 50vw;
+    }
+
+    @media screen and (max-width:375px) {
+        width: 60vw;
+        text-align: center;
+        h2 {
+            margin-left: 3vw;
+        }
+    }
+    @media screen and (max-width: 320px) {
+        min-height: 65vw;
+    }
+}

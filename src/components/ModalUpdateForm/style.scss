@@ -1,0 +1,117 @@
+        @import "../../baseline";
+        @import "../../variables";
+        .modal-edit-wrapperUpdate {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+            font-family: "Calibri Light";
+            button:hover {
+                cursor: pointer;
+            }
+            .modal-edit-content {
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                padding: 15px 20px;
+                min-height: 30vh;
+                min-width: 25vw;
+                background-color: white;
+                position: relative;
+                border-radius: 10px;
+                border: none;
+                .MainTitle {
+                    padding: 12px 10px;
+                    background-color: $color2;
+                    border-radius: 10px;
+                    font-size: 20px;
+                    color: white;
+                    font-weight: bold;
+                    margin-bottom: 15px;
+                }
+                .titles {
+                    color: $color4;
+                    font-size: 16px;
+                    font-weight: bold;
+                    min-width: 100%;
+                    margin-bottom: 10px;
+                    font-family: "Calibri Light";
+                }
+                .smallbox {
+                    width: 100%;
+                    border-radius: 10px;
+                    border: 1px solid $color1;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    font-family: "Calibri Light";
+                    color: $color1;
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
+                .notebox {
+                    resize: none;
+                    width: 100%;
+                    height: 10vh;
+                    overflow-y: scroll;
+                    border-radius: 10px;
+                    border: 1px solid $color1;
+                    font-size: 15px;
+                    font-family: "Calibri Light";
+                    color: $color1;
+                    padding: 10px 10px;
+                }
+                //   dodaci za scroll
+                /* width */
+                 ::-webkit-scrollbar {
+                    width: 10px;
+                }
+                /* Track */
+                 ::-webkit-scrollbar-track {
+                    box-shadow: inset 0 0 5px grey;
+                    border-radius: 10px;
+                }
+                /* Handle */
+                 ::-webkit-scrollbar-thumb {
+                    background: $color4;
+                    border-radius: 5px;
+                }
+                /* Handle on hover */
+                 ::-webkit-scrollbar-thumb:hover {
+                    background: $color6;
+                }
+                .btnwrap {
+                    display: flex;
+                    justify-content: flex-end;
+                    .submitBtn {
+                        background-color: $color4;
+                        padding: 6px 12px;
+                        border-radius: 10px;
+                        border: 1px solid $color4;
+                        font-family: "Calibri Light";
+                        font-size: 14px;
+                        color: white;
+                        font-weight: bold;
+                    }
+                    .submitBtn:hover {
+                        border: 2px solid $color4;
+                    }
+                    .closeBtn {
+                        margin-right: 10px;
+                        padding: 6px 12px;
+                        background-color: white;
+                        border-radius: 10px;
+                        border: 1px solid $color1;
+                        font-family: "Calibri Light";
+                        font-size: 14px;
+                        color: $color1;
+                    }
+                    .closeBtn:hover {
+                        border: 2px solid $color6;
+                    }
+                }
+            }
+        }
