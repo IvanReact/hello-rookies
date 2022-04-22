@@ -20,7 +20,7 @@ function ModalForm(props) {
   });
 
   function submitInterview() {
-    fetch(`http://localhost:3333/api/reports/`, {
+    fetch(`https://api-mock.avanturista.com/api/reports/`, {
       method: "POST",
       headers: {
         Authorization: `Bearer ${token}`,

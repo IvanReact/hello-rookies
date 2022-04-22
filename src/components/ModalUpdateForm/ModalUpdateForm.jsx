@@ -18,7 +18,7 @@ function ModalUpdateForm(props) {
   });
 
   function editInterview() {
-    fetch(`http://localhost:3333/api/reports/${props.interview.id}`, {
+    fetch(`https://api-mock.avanturista.com/api/reports/${props.interview.id}`, {
       method: "PUT",
       headers: {
         Authorization: `Bearer ${token}`,

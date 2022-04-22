@@ -11,7 +11,7 @@ const Login = (props) => {
   let history = useHistory()
 
   const logovanje = () => {
-    fetch("http://localhost:3333/login", {
+    fetch("https://api-mock.avanturista.com/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

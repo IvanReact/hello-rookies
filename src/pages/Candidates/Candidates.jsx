@@ -1,9 +1,8 @@
-import { React, useContext } from "react";
+import { React, useContext, useState } from "react";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import CandidateCard from "../../components/CandidateCard/CandidateCard";
 import { candidatesContext } from "../../contexts/contexts"
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import search from "../../images/search.png"
 

@@ -22,19 +22,21 @@ const HomePage = (props) => {
   const [activePage, setActivePage] = useState("candidates")
 
   useEffect(() => {
-    fetch("http://localhost:3333/api/candidates")
+
+    
+    fetch("https://api-mock.avanturista.com/api/candidates")
       .then((res) => res.json())
       .then((data) => setCandidates(data));
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:3333/api/reports")
+    fetch("https://api-mock.avanturista.com/api/reports")
       .then((res) => res.json())
       .then((data) => setInterviews(data));
   }, [shouldUpdate]);
 
   useEffect(() => {
-    fetch("http://localhost:3333/api/companies")
+    fetch("https://api-mock.avanturista.com/api/companies")
       .then((res) => res.json())
       .then((data) => setCompanies(data));
   }, []);

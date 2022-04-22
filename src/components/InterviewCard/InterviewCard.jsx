@@ -7,7 +7,7 @@ const InterviewCard = (props) => {
   const token = localStorage.getItem("token");
 
     function deleteInterview(e) {
-        fetch(`http://localhost:3333/api/reports/${e.id}`, {
+        fetch(`https://api-mock.avanturista.com/api/reports/${e.id}`, {
           method: "DELETE",
           headers: {
             Authorization: `Bearer ${token}`,
