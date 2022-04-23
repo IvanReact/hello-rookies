@@ -16,6 +16,7 @@
     .singleCandidateContainer {
         display: flex;
         flex-grow: 1;
+
         .data {
             box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
             margin-top: 5vh;
@@ -47,6 +48,7 @@
                 border-radius: 15px;
                 box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
             }
+
             @media screen and (max-width: 1040px) {
                 height: 25vh;
                 margin-top: 12vh;
@@ -63,9 +65,10 @@
                     }
                 }
             }
-            @media screen and (max-width: 880px) {
+
+            @media screen and (max-width: 769px) {
                 width: 70vw;
-                min-height: 45vh;
+                min-height: 55vh;
                 margin-top: 5vh;
                 align-items: flex-start;
                 justify-content: flex-start;
@@ -140,8 +143,9 @@
                     }
                 }
             }
-            @media screen and(max-width: 540px) {
-                height: 20vw;
+
+            @media screen and(max-width: 426px) {
+                height: 25rem;
                 .dataDetails {
                     h2 {
                         font-size: 15px;
