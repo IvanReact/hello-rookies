@@ -74,6 +74,7 @@
                 justify-content: flex-start;
                 flex-wrap: wrap;
                 padding: 10px;
+
                 .dataDetails {
                     padding: 0;
                     margin: 10px;
@@ -106,6 +107,7 @@
                 justify-content: center;
                 flex-wrap: wrap;
                 padding: 10px;
+
                 .dataDetails {
                     padding: 0;
                     margin: 10px;
@@ -275,9 +277,15 @@
         background-color: $color4;
         color: $color1;
         margin-left: 68vw;
+
         @media screen and(max-width: 540px) {
+            margin: 0.5rem auto;
+            width: 13rem;
             font-size: 8px;
             color: white;
+            text-align: center;
+            justify-self: center;
+            align-self: center;
         }
     }
 

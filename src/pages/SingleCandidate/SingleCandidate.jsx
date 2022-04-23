@@ -59,7 +59,9 @@ const SingleCandidate = (props) => {
    
     return (
       <div className="singleCandidate">
+        
         <Header setToken={props.setToken} />
+
         <div className="singleCandidateContainer">
           <div className="data">
             <img src="https://static.vecteezy.com/system/resources/thumbnails/000/439/863/small/Basic_Ui__28186_29.jpg" alt="imageAvatar"></img>
@@ -73,6 +75,7 @@ const SingleCandidate = (props) => {
             </div>
           </div>
         </div>
+
         <h1>Interviews</h1>
         <table>
           <tbody>

@@ -40,7 +40,7 @@
         
 
             button{
-                width: 7vw;
+                min-width: 9vw;
                 height: 4vh;
                 border-radius: 5px;
                 background-color: $color4;
@@ -53,32 +53,53 @@
                 border: 1px solid $color4;
                 box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
         }
+
         .signInDiv{
             display: flex;
             border-bottom: 1px solid $color1;
+
             img{
                 margin-top: 11.5px;
                 width: 25px;
                 height: 25px;
             }
         }
+
         @media screen and (max-width: 950px){
             position: relative;
             right: 55vw;
             width: 32vw;
             padding-right: 10vw;
+
             input{
                 width: 20vw;
             }
+
             button{
                 margin-left: 15.5vw;
+                min-width: 4rem;
+                margin: 0 auto;
             }
         }
-        @media screen and (max-width: 700px) {
-            margin-left: 120vw;
+        @media screen and (max-width: 426px) {
+            margin-left: 110vw;
             width: 500px;
+
+            h1 {
+                width: 7rem;
+                align-self: center;
+            }
+
+            input {
+                width: 7rem;
+            }
+
+            .loginLightDiv{
+                width: 30rem;
+            }
         } 
     }
+
     .loginDarkDiv{
         border-radius: 5px;
         background-color: $color1 ;
