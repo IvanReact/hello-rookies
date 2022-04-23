@@ -5,6 +5,7 @@
     font-family: "Calibri";
     width: 100%;
     height: 100vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,6 +19,7 @@
         background-color: white;
         width: 25vw;
         height: 50vh;
+
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -32,11 +34,12 @@
             padding-left: 20px;
             border: none;
         }
+
         input:focus {
             outline: none;
             border-top: 1px solid $color4;
             border-left: 1px solid $color4;
-          }
+        }
         
 
             button{
@@ -65,11 +68,22 @@
             }
         }
 
-        @media screen and (max-width: 950px){
-            position: relative;
-            right: 55vw;
-            width: 32vw;
-            padding-right: 10vw;
+        @media screen and (max-width: 769px){
+            position: static;
+            margin: 0 auto;
+            width: 500px;
+            padding: 2rem;
+            align-items: center;
+
+            .signInDiv{
+                margin-bottom: 2rem;
+            }
+
+            .loginLightDiv{
+                position: static;
+                width: 40rem;
+               
+            }
 
             input{
                 width: 20vw;
@@ -81,21 +95,25 @@
                 margin: 0 auto;
             }
         }
+
         @media screen and (max-width: 426px) {
-            margin-left: 110vw;
-            width: 500px;
+            width: 30rem;
+            padding: 2rem;
+            margin: 7rem;
+            
+            .loginLightDiv{
+                width: 30rem;
+            }
 
             h1 {
                 width: 7rem;
                 align-self: center;
+                margin-bottom: 0.5rem;
             }
 
             input {
                 width: 7rem;
-            }
-
-            .loginLightDiv{
-                width: 30rem;
+                margin-bottom: 0.5rem;
             }
         } 
     }
@@ -109,9 +127,11 @@
         text-align: right;
         display: flex;
         justify-content: flex-end;
+
         span{
             color: $color4;
         }
+
         p{
             margin-top: 8vh;
             margin-right: 3vw;
@@ -119,25 +139,17 @@
             max-width: 16vw;
             text-align: left;
         }
+
         @media screen and (max-width: 1280px) {
             p{
                 font-size: 25px;
                 margin-top: 12vh;
             }
         }
-        @media screen and (max-width: 950px){
-            width: 80vw;
-            margin-left: 10vw;
-            p{
-                margin-top: 10vh;
-               margin-right: 12vw; 
-                width: 10vw;
-                font-size: 22px;
-            }
+        @media screen and (max-width: 769px){
+          display: none;
         }
-        @media screen and (max-width: 700px) {
-            display: none;
-        }     
+
     }
 
 }
