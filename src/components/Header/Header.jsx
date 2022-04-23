@@ -1,6 +1,6 @@
 import { React, useContext } from "react";
-import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
+
 import logo221 from "../../images/logo221.png"
 import "./style.scss"
 

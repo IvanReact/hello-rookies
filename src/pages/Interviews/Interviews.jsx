@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import InterviewCard from "../../components/InterviewCard/InterviewCard";
+
 import { interviewsContext } from "../../contexts/contexts";
 import { useContext } from "react";
+
 import search from "../../images/search.png";
 
 import "./style.scss"

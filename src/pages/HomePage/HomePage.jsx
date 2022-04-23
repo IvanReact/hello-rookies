@@ -23,22 +23,14 @@ const HomePage = (props) => {
 
   const [activePage, setActivePage] = useState("candidates")
 
-  useEffect(() => {
-
-    
+  useEffect(() => {   
     fetch("https://api-mock.avanturista.com/api/candidates")
       .then((res) => res.json())
       .then((data) => setCandidates(data));
   }, []);
 
   useEffect(() => {
-    fetch("https://api-mock.avanturista.com/api/reports", {
-      method: "GET",
-      cache: "no-cache",
-      headers: {
-        "Content-Type": "application/json"
-      }
-    })
+    fetch("https://api-mock.avanturista.com/api/reports")
       .then((res) => res.json())
       .then((data) => setInterviews(data));
   }, [shouldUpdate]);
@@ -77,4 +69,5 @@ const HomePage = (props) => {
     </div>
   );
 };
+
 export default HomePage;
