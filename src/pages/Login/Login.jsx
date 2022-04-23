@@ -37,7 +37,7 @@ const Login = (props) => {
 
         <div className="loginDarkDiv">
           <div className="textDiv">
-            <p> <span>H</span>ELLO <span>R</span>OOKIES <br /> WELCOME TO WORLD OF OPPORTUNITIES! </p>
+            <p> <span>H</span>ELLO <span>R</span>OOKIES <br /> WELCOME TO WORLD OF IT! </p>
           </div>
         </div>
 
