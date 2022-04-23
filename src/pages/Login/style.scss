@@ -12,25 +12,25 @@
 
   .loginLightDiv {
     color: $color1;
+
     z-index: 1;
     position: relative;
     right: 38rem;
     background-color: white;
-    width: 25vw;
+    width: 18rem;
     height: 50vh;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
     padding: 2rem;
-    justify-content: space-around;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.15) 7.4px 9.4px 3.2px;
 
     input {
-      width: 15vw;
+      width: 11rem;
       height: 4vh;
       padding-left: 20px;
       border: none;
@@ -83,6 +83,12 @@
       .loginLightDiv {
         position: static;
         width: 35rem;
+      }
+
+      h1 {
+        width: 7rem;
+        align-self: center;
+        margin-bottom: 0.5rem;
       }
 
       input {
@@ -148,12 +154,6 @@
       }
     }
 
-    @media only screen and (max-device-width: 1280px) {
-      p {
-        font-size: 25px;
-        margin-top: 12vh;
-      }
-    }
     @media only screen and (max-device-width: 769px) {
       display: none;
     }
