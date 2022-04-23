@@ -9,11 +9,13 @@
     height: 13vh;
     width: 100%;
     color: white;
+
     .headerButton {
         display: flex;
         justify-content: center;
         height: 100%;
         align-items: center;
+        
         .active {
             background-color: $color4;
             color: white;

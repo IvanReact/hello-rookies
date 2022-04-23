@@ -1,14 +1,12 @@
-import React from "react";
+import {React, useState} from "react";
 import "./style.scss";
-import { useState } from "react";
+
 import emailOfc from "../../images/emailOfc.png";
 import icon2 from "../../images/icon2.png";
-import { useHistory } from "react-router-dom";
 
 const Login = (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  let history = useHistory()
 
   const logovanje = () => {
     fetch("https://api-mock.avanturista.com/login", {
@@ -24,7 +22,7 @@ const Login = (props) => {
       .then((res) => res.json())
       .then((res) => {
         if (typeof res === "string") {
-          alert("Niste dobro uneli korisnicko ime ili sifru");
+          alert("Entered username and/or password is incorrect, please repeat the entry!");
         }
         if (typeof res === "object") {
           localStorage.setItem("token", res.accessToken);
@@ -36,31 +34,27 @@ const Login = (props) => {
   return (
     <>
       <div className="loginWrapper">
+
         <div className="loginDarkDiv">
           <div className="textDiv">
             <p> <span>H</span>ELLO <span>R</span>OOKIES <br /> WELCOME TO WORLD OF OPPORTUNITIES! </p>
           </div>
         </div>
+
         <div className="loginLightDiv">
           <h1>SIGN IN</h1>
+          
           <div className="signInDiv">
-            <input id="inputEmail"
-              type="email"
-              placeholder="Email"
-              onChange={(e) => setEmail(e.target.value)}
-            />
+            <input id="inputEmail" type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
             <img src={emailOfc} alt="" />
           </div>
+
           <div className="signInDiv">
-            <input
-              type="password"
-              placeholder="Password"
-              onChange={(e) => setPassword(e.target.value)}
-            />
+            <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
             <img src={icon2} alt="" />
           </div>
 
-          <button onClick={logovanje} >LOGIN</button>
+          <button onClick={logovanje}>LOGIN</button>
 
         </div>
       </div>

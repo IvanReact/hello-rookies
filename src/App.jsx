@@ -18,7 +18,6 @@ const App = () => {
   if (!token) {
     return <Switch>
       <Redirect from="/candidates" to="/" />
-      <Redirect from="/interviews" to="/" />
       <Route path='/' >
         <Login setToken={setToken}></Login>
       </Route>
