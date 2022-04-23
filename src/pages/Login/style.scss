@@ -18,7 +18,7 @@
     right: 38rem;
     background-color: white;
     width: 18rem;
-    height: 50vh;
+    min-height: 50vh;
 
     display: flex;
     flex-direction: column;
@@ -34,6 +34,10 @@
       height: 4vh;
       padding-left: 20px;
       border: none;
+    }
+
+    h1{
+      width: 100%;
     }
 
     input:focus {
@@ -86,7 +90,8 @@
       }
 
       h1 {
-        width: 7rem;
+        width: 100%;
+        text-align: center;
         align-self: center;
         margin-bottom: 0.5rem;
       }
