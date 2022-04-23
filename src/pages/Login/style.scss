@@ -67,7 +67,7 @@
             }
         }
 
-        @media only screen and (max-width: 769px){
+        @media only screen and (max-device-width: 769px){
             position: static;
             margin: 0 auto;
             width: 500px;
@@ -94,7 +94,7 @@
             }
         }
 
-        @media only screen and (max-width: 426px) {
+        @media only screen and (max-device-width: 426px) {
             width: 30rem;
             padding: 2rem;
             margin: 7rem;
@@ -138,13 +138,13 @@
             text-align: left;
         }
 
-        @media only screen and (max-width: 1280px) {
+        @media only screen and (max-device-width: 1280px) {
             p{
                 font-size: 25px;
                 margin-top: 12vh;
             }
         }
-        @media only screen and (max-width: 769px){
+        @media only screen and (max-device-width: 769px){
           display: none;
         }
 
