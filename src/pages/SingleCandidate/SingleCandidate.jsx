@@ -40,7 +40,7 @@ const SingleCandidate = (props) => {
   const singleCandidateReport = interviews.filter((e) => e.candidateId == id);
 
   function deleteInterview(e) {
-    fetch(`https://api-mock.avanturista.com/api/reports/${e.id}`, {
+    fetch(`https://api-mock-rookie.herokuapp.com/api/reports/${e.id}`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${token}`,

@@ -20,7 +20,7 @@ function ModalForm(props) {
   });
 
   function submitInterview() {
-    fetch(`https://api-mock.avanturista.com/api/reports/`, {
+    fetch(`https://api-mock-rookie.herokuapp.com/api/reports/`, {
       method: "POST",
       headers: {
         Authorization: `Bearer ${token}`,

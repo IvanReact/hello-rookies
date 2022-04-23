@@ -9,7 +9,7 @@ const Login = (props) => {
   const [password, setPassword] = useState("");
 
   const logovanje = () => {
-    fetch("https://api-mock.avanturista.com/login", {
+    fetch("https://api-mock-rookie.herokuapp.com/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -43,7 +43,7 @@ const Login = (props) => {
 
         <div className="loginLightDiv">
           <h1>SIGN IN</h1>
-          
+
           <div className="signInDiv">
             <input id="inputEmail" type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
             <img src={emailOfc} alt="" />

@@ -13,7 +13,7 @@ import {
 } from "../../contexts/contexts";
 
 const HomePage = (props) => {
-  
+
   const [candidates, setCandidates] = useState([]);
   const [interviews, setInterviews] = useState([]);
   const [companies, setCompanies] = useState([]);
@@ -21,19 +21,19 @@ const HomePage = (props) => {
   const [shouldUpdate, setUpdate] = useState(false);
 
   useEffect(() => {   
-    fetch("https://api-mock.avanturista.com/api/candidates")
+    fetch("https://api-mock-rookie.herokuapp.com/api/candidates")
       .then((res) => res.json())
       .then((data) => setCandidates(data));
   }, []);
 
   useEffect(() => {
-    fetch("https://api-mock.avanturista.com/api/reports")
+    fetch("https://api-mock-rookie.herokuapp.com/api/reports")
       .then((res) => res.json())
       .then((data) => setInterviews(data));
   }, [shouldUpdate]);
 
   useEffect(() => {
-    fetch("https://api-mock.avanturista.com/api/companies")
+    fetch("https://api-mock-rookie.herokuapp.com/api/companies")
       .then((res) => res.json())
       .then((data) => setCompanies(data));
   }, []);
