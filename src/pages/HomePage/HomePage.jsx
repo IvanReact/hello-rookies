@@ -1,9 +1,11 @@
+import "./style.scss";
+
 import { React, useState, useEffect } from "react";
+import { Switch, Route } from "react-router-dom";
+
 import Candidates from "../Candidates/Candidates";
 import Interviews from "../Interviews/Interviews";
 import SingleCandidate from "../SingleCandidate/SingleCandidate";
-import { Switch, Route } from "react-router-dom";
-import "./style.scss";
 
 import {
   CandidatesProvider,
@@ -30,7 +32,13 @@ const HomePage = (props) => {
   }, []);
 
   useEffect(() => {
-    fetch("https://api-mock.avanturista.com/api/reports")
+    fetch("https://api-mock.avanturista.com/api/reports", {
+      method: "GET",
+      cache: "no-cache",
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
       .then((res) => res.json())
       .then((data) => setInterviews(data));
   }, [shouldUpdate]);
@@ -44,7 +52,7 @@ const HomePage = (props) => {
   function setShouldUpdate() {
     setUpdate(!shouldUpdate)
   }
-  console.log("Homepage rendere")
+
   return (
     <div className="homePage">
       <ActivePageProvider value={{ activePage, setActivePage }}>
